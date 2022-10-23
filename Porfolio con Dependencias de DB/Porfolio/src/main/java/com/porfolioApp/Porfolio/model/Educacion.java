@@ -24,9 +24,9 @@ public class Educacion {
     public Educacion() {
     }
 
-    public Educacion(Long id, String escuela, String logotipo, String sitioweb, 
+    public Educacion(String escuela, String logotipo, String sitioweb, 
             String titulo, String periodo) {
-        this.id = id;
+        
         this.escuela = escuela;
         this.logotipo = logotipo;
         this.sitioweb = sitioweb;

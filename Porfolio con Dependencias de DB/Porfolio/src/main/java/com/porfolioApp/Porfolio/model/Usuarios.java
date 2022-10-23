@@ -16,17 +16,18 @@ public class Usuarios {
     private Long id;
     
     private String nombre;
-    private String contraseña;
+    private String password;
     private String email;
-    
- 
+
     public Usuarios() {
     }
 
-    public Usuarios(Long id, String nombre, String contraseña, String email) {
+    public Usuarios(Long id, String nombre, String password, String email) {
         this.id = id;
         this.nombre = nombre;
-        this.contraseña = contraseña;
+        this.password = password;
         this.email = email;
     }
-}
+    
+    
+ }

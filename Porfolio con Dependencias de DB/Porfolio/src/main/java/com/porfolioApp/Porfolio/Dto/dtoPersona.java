@@ -1,19 +1,10 @@
-package com.porfolioApp.Porfolio.model;
+package com.porfolioApp.Porfolio.Dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-@Entity
-public class Persona {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class dtoPersona {
     
     private String imgportada;
     private String imgfoto;
@@ -24,12 +15,12 @@ public class Persona {
     private String telefono;
     private String e_mail;
     
-    public Persona() {
+    public dtoPersona() {
     }
 
-    public Persona(Long id, String imgportada, String imgfoto, String nombre, String profesion,
+    public dtoPersona(String imgportada, String imgfoto, String nombre, String profesion,
             String descripcion, String instagram, String telefono, String e_mail) {
-        this.id = id;
+        
         this.imgportada = imgportada;
         this.imgfoto = imgfoto;
         this.nombre = nombre;
@@ -39,6 +30,5 @@ public class Persona {
         this.telefono = telefono;
         this.e_mail = e_mail;
     }
-
+    
 }
-

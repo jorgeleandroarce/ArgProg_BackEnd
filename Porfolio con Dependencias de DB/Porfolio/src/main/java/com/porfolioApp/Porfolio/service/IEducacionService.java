@@ -2,6 +2,7 @@ package com.porfolioApp.Porfolio.service;
 
 import com.porfolioApp.Porfolio.model.Educacion;
 import java.util.List;
+import java.util.Optional;
 
 public interface IEducacionService {
     
@@ -11,6 +12,6 @@ public interface IEducacionService {
     
     public void borrarEducacion (Long id); 
     
-    public void editarEducacion(Educacion edu);
+    public Optional<Educacion> buscarEducacion (Long id);
     
 }

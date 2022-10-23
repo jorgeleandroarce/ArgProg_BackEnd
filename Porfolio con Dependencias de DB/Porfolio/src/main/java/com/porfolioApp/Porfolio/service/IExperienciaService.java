@@ -2,6 +2,7 @@ package com.porfolioApp.Porfolio.service;
 
 import com.porfolioApp.Porfolio.model.Experiencia;
 import java.util.List;
+import java.util.Optional;
 
 public interface IExperienciaService {
     
@@ -9,8 +10,8 @@ public interface IExperienciaService {
     
     public void crearExperiencia (Experiencia exp);
     
-    public void borrarExperiencia (Long id); 
+    public void borrarExperiencia (Long id);
     
-    public void editarExperiencia(Experiencia exp);
+    public Optional<Experiencia> buscarExperiencia (Long id);
     
 }

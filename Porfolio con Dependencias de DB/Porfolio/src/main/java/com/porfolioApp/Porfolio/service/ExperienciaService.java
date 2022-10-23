@@ -3,6 +3,7 @@ package com.porfolioApp.Porfolio.service;
 import com.porfolioApp.Porfolio.model.Experiencia;
 import com.porfolioApp.Porfolio.repository.ExperienciaRepository;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,8 +29,8 @@ public class ExperienciaService implements IExperienciaService {
     }
 
     @Override
-    public void editarExperiencia(Experiencia exp) {
-       expRepo.save(exp);
+    public Optional<Experiencia> buscarExperiencia(Long id) {
+            return expRepo.findById(id);
     }
     
 }

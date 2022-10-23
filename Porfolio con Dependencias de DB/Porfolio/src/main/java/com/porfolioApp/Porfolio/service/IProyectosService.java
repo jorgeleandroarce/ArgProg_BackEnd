@@ -2,6 +2,7 @@ package com.porfolioApp.Porfolio.service;
 
 import com.porfolioApp.Porfolio.model.Proyectos;
 import java.util.List;
+import java.util.Optional;
 
 public interface IProyectosService {
     
@@ -11,6 +12,6 @@ public interface IProyectosService {
     
     public void borrarProyectos (Long id); 
     
-    public void editarProyectos (Proyectos proy);
+    public Optional<Proyectos> buscarProyectos (Long id);
     
 }

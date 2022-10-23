@@ -3,6 +3,7 @@ package com.porfolioApp.Porfolio.service;
 import com.porfolioApp.Porfolio.model.Educacion;
 import com.porfolioApp.Porfolio.repository.EducacionRepository;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,8 +29,8 @@ public class EducacionService implements IEducacionService {
     }
 
     @Override
-    public void editarEducacion(Educacion edu) {
-       eduRepo.save(edu);
+    public Optional<Educacion> buscarEducacion(Long id) {
+            return eduRepo.findById(id);
     }
     
 }
